@@ -1,0 +1,148 @@
+.header-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #415a77;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 15px;
+    padding-right: 0px;
+    height: 60px;
+  }
+}
+
+.logo-and-title-container {
+  background-image: linear-gradient(to right, #02aabd, #00cdac);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  /* height: 60px;
+ width: 60px;
+ border-radius: 50px;
+ margin-left: 30px; */
+}
+@media screen and (max-width: 768px) {
+  .logo-and-title-container {
+    /* height: 30px;
+   width: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    margin-left: 15px;
+  }
+}
+
+.logo-name {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-name {
+    font-size: 15px;
+  }
+}
+
+.nav-items-list {
+  display: flex;
+}
+
+.link-item {
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+.route-link {
+  color: #10002b;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.route-link:hover {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .route-link {
+    margin-left: 10px;
+  }
+}
+
+.download-btn {
+  background-image: linear-gradient(to right, #f08080, #f4978e, #f8ad9d);
+  /* background-image: linear-gradient(to right, #ffcad4, #f4acb7); */
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  padding: 5px;
+  width: 200px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  /* margin-bottom: 20px; */
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.download-btn:hover {
+  color: #10002b;
+}
+
+.desktop-view {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+}
+
+.mobile-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .mobile-view {
+    display: none;
+  }
+}
+
+.icon-container {
+  display: flex;
+}
+
+.icons {
+  color: white;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.icon-name {
+  display: none;
+  font-size: 10.5px;
+  color: black;
+  border-radius: 5px;
+  background-color: #ffd8be;
+  padding: 3px;
+}
+
+.icons:hover + .icon-name {
+  display: block;
+  position: absolute;
+}
