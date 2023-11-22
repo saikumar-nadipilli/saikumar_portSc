@@ -1,0 +1,40 @@
+.mobile-viewb {
+  background-color: #f85e00;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-viewb {
+    display: none;
+  }
+}
+
+.desktop-viewb {
+  background-color: #f85e00;
+  font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+  .desktop-viewb {
+    display: none;
+  }
+}
+.text-animation-container {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-animation {
+  display: inline-block;
+  animation: moveText 10s linear infinite;
+  margin-right: 250px;
+  color: white;
+}
+
+/* Animation for moving text */
+@keyframes moveText {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}

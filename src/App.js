@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
+import ScrollingText from "./components/ScrollingText";
 
 import "./App.css";
 
@@ -13,6 +14,7 @@ const App = () => (
   <div className="app-container">
     <div className="responsive-container">
       <Header />
+      <ScrollingText />
       <div className="app-body">
         <Switch>
           <Route exact path="/" component={About} />
